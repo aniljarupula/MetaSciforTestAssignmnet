@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2.WRITE A PROGRAM USING PROMPT TO INPUT A NUMBER (1-7). USE A SWITCH STATEMENT TO PRINT THE CORRESPONDING DAY OR 'INVALID DAY' FOR NUMBERS OUTSIDE THIS RANGE. -->
+
+    <script>
+
+        let number=prompt("enter number");
+        let day;
+        switch (number) {
+
+            case "1":
+                day="Moday";
+                break;
+
+             case "2":
+                day="Tuesday";
+                break;
+
+                case "3":
+                    day="Wednesday";
+                    break;
+
+                    case "4":
+                        day="Thursday";
+                        break;
+
+                        case "5":
+                            day="Friday";
+                            break;
+
+                            case "6":
+                                day="Saturday";
+                                break;
+
+
+                                case "7":
+                                    day="Sunday";
+                                    break;
+
+                                    case "8":
+                                        day="Inavalid_day";
+                                        break;
+
+        }
+
+        document.write(day);
+
+
+    </script>
+    
+</body>
+</html>
