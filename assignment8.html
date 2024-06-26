@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caluclator using javascript</title>
+</head>
+<body>
+    <!-- create the basic caluclator using javascript that performs addition,substraction div and multiplication -->
+
+    <script>
+        // convert the string into a number using parsefloat
+
+        let num1=parseFloat(prompt("enter the first number"));
+        let num2=parseFloat(prompt("enter the second number"));
+        let operations= prompt(" +,-,*,/");
+
+
+        function addition(a,b){
+            let addition=a+b;
+            return addition;
+           document.write(addition);
+            
+        }
+
+        function substraction(a,b){
+            let substraction=a-b;
+            return substraction;
+            document.write(substraction);
+            
+        }
+
+
+        function multiplication(a,b){
+            let multiplication=a*b;
+            return multiplication;
+            document.write(multiplication);
+            
+        }
+
+        function division(a,b){
+            let division=a/b;
+            return division;
+            document.write(division);
+            
+        }
+
+
+
+        let result;
+         switch(operations){
+
+            case '+':
+                result=addition(num1,num2);
+                break;
+
+                case '*':
+                result=multiplication(num1,num2);
+                break;
+
+                case '-':
+                result=substraction(num1,num2);
+                break;
+
+                case '/':
+                result=division(num1,num2);
+                break;
+
+                default :
+                result="enter the valid operation";
+
+
+         }
+
+        document.write(result);
+
+       
+    </script>
+    
+</body>
+</html>
